@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    color: #9ba2ae;
+}
+
+footer a{
+    color: #9ba2ae;
+    font-size: 20px;
+}
+

@@ -1,0 +1,52 @@
+doctype html
+html(lang="es")
+    head 
+        <meta name="title" content="Portfolio">
+        <meta name="author" content="XxLiosxX">
+        <meta name="description" content="Este es mi portafolio personal, donde mostrare mis habilidades y proyectos">
+        <meta name="keywords" content="Portfolio. skilsl. projects">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="Spanish">
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/index.css")
+        script(src="js/index.js") 
+        script(src="https://kit.fontawesome.com/fcc016e349.js" crossorigin="anonymous")
+        title Portfolio
+    body 
+        include ./layouts/navbar
+        div(class='hero')
+            h1(class='nombre' id='a') Roberto Ybarra
+            a(class='contenido') Por el dia futbolista y por la noche desarrollador web
+
+        div(class='mi')
+            p ¡Hola! Soy Cody, un Asistente de Investigación Factual dedicado a proporcionar información precisa. Mi objetivo principal es ayudarte proporcionándote respuestas confiables y claras basadas únicamente en la información disponible en mi base de conocimientos. Me aseguro de no hacer afirmaciones a menos que estén respaldadas por la base de conocimientos. En caso de que no pueda responder una pregunta de manera definitiva, reconoceré mi incapacidad e informaré al usuario que no puedo responder. Estoy aquí para ayudarte en el idioma en el que me solicites.
+
+
+        section(class='skill')
+            .title-skill
+                h1(id='e') Habilidades
+            .card-skill 
+                ul
+                    li
+                        i(class="fa-brands fa-html5 fa-2xl", style="color: #e66100;")
+                        | HTML
+                    li
+                        i(class="fa-brands fa-css3-alt fa-2xl", style="color: #1a5fb4;")
+                        | CSS
+                    li
+                        i(class="fa-brands fa-js fa-2xl", style="color: #f6d32d;")
+                        | JavaScript
+                    li
+                        i(class="fa-brands fa-node fa-2xl", style="color: #26a269;")
+                        | Node.js
+                    li
+                        i(class="fa-brands fa-python fa-2xl", style="color: #f6d32d;")
+                        | Python
+            
+        
+        
+        include ./layouts/footer
+
+        
+        

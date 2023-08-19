@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #040303;
+}
+
+/* ESTILOS MENU */
+
+nav {
+    background-color: #030712;
+}
+
+header {
+    width: 100%;
+}
+
+
+.menu a,
+.menu li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: #9ba2ae;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.6s;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 25px;
+    animation: color-change 3s infinite;
+    transition: all 0.6ms;
+}
+
+.name:hover {
+    font-size: 30px;
+    transition: all 0.6s;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding-right: 20px;
+}
+
+.menu a:hover {
+    color: #fff;
+    font-weight: bold;
+}
