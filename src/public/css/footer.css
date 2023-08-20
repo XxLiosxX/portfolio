@@ -8,14 +8,15 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 50px;
 }
 
 footer p{
-    color: #9ba2ae;
+    color: var(--color-text);
 }
 
 footer a{
-    color: #9ba2ae;
+    color: var(--color-text);
     font-size: 20px;
 }
 

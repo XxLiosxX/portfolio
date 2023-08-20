@@ -15,11 +15,11 @@ html(lang="es")
         title Portfolio
     body 
         include ./layouts/navbar
-        div(class='hero')
+        .hero
             h1(class='nombre' id='a') Roberto Ybarra
             a(class='contenido') Por el dia futbolista y por la noche desarrollador web
 
-        div(class='mi')
+        section(class='mi')
             p ¡Hola! Soy Cody, un Asistente de Investigación Factual dedicado a proporcionar información precisa. Mi objetivo principal es ayudarte proporcionándote respuestas confiables y claras basadas únicamente en la información disponible en mi base de conocimientos. Me aseguro de no hacer afirmaciones a menos que estén respaldadas por la base de conocimientos. En caso de que no pueda responder una pregunta de manera definitiva, reconoceré mi incapacidad e informaré al usuario que no puedo responder. Estoy aquí para ayudarte en el idioma en el que me solicites.
 
 
@@ -44,8 +44,23 @@ html(lang="es")
                         i(class="fa-brands fa-python fa-2xl", style="color: #f6d32d;")
                         | Python
             
-        
-        
+        section(class='projects')
+             h2(id='i') Proyectos
+             ul
+               a(href="#")
+                    li proyecto 1
+                    img(src="chrome://branding/content/about-logo.png", width='20px')
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               a(href="#")
+                    li proyecto 2
+                    img(src="chrome://branding/content/about-logo.png", width='20px')
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               a(href="#")
+                    li proyecto 3
+                    img(src="chrome://branding/content/about-logo.png", width='20px')
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                        
         include ./layouts/footer
 
         

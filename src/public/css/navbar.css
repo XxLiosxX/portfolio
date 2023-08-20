@@ -14,17 +14,10 @@ body {
 
 nav {
     background-color: #030712;
-}
-
-header {
+    position: fixed;
     width: 100%;
-}
-
-
-.menu a,
-.menu li {
-    text-decoration: none;
-    list-style: none;
+    top: 0;
+    left: 0;
 }
 
 .menu {
@@ -35,7 +28,7 @@ header {
 }
 
 .menu a {
-    color: #9ba2ae;
+    color: var(--color-text);
     font-family: 'Poppins', sans-serif;
     transition: all 0.6s;
     font-weight: bold;
