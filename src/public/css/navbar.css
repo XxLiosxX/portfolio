@@ -1,60 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-    background-color: #040303;
+  background-color: #040303;
 }
 
 /* ESTILOS MENU */
 
 nav {
-    background-color: #030712;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+  background-color: #131212;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .menu a {
-    color: var(--color-text);
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.6s;
-    font-weight: bold;
+  color: var(--color-text);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.6s;
+  font-weight: bold;
 }
 
 .name {
-    font-size: 25px;
-    animation: color-change 3s infinite;
-    transition: all 0.6ms;
+  font-size: 25px;
+  animation: color-change 2.5s infinite;
+  transition: all 0.6s;
 }
 
 .name:hover {
-    font-size: 30px;
-    transition: all 0.6s;
+  font-size: 30px;
+  transition: all 0.6s;
 }
 
 .group {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .item {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .menu a:hover {
-    color: #fff;
-    font-weight: bold;
+  color: #fff8f8;
+  font-weight: bold;
 }
+  

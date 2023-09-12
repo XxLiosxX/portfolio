@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 footer {
@@ -11,12 +12,28 @@ footer {
     padding: 50px;
 }
 
-footer p{
+footer p {
     color: var(--color-text);
 }
 
-footer a{
+footer a {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 30px;
+    transition: 500ms;
 }
 
+footer a:hover{
+    font-size: 50px;
+}
+
+@keyframes heart-beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

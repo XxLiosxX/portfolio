@@ -6,7 +6,8 @@
 }
 
 :root {
-  --color-text: #9ba2ae;
+  --color-text: #DDE6ED;
+  --color-card: rgb(65, 65, 65);
 }
 
 .hero {
@@ -19,25 +20,27 @@
 
 .nombre {
   font-size: 60px;
-  animation: color-change 3s infinite;
+  animation: anim-lineUp 4s;
   font-weight: 800;
 }
 
 .contenido {
+  text-align: center;
   font-weight: 800;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
 .mi {
   color: var(--color-text);
   font-size: 20px;
+  font-weight: 800;
   text-align: center;
-  width: 100%;
   padding: 50px 0px;
 }
 
 .skill {
-  padding: 200px;
+  padding: 100px;
 }
 
 .title-skill {
@@ -52,7 +55,7 @@
 }
 
 .card-skill li {
-  background-color: rgb(65, 65, 65);
+  background-color: var(--color-card);
   color: var(--color-text);
   display: flex;
   flex-direction: column-reverse;
@@ -65,20 +68,65 @@
   transition: 500ms;
 }
 
+.card-skill svg {
+  width: 50px;
+  padding-top: 10px;
+}
+
 .card-skill i {
   padding-top: 30px;
-  font-size: 50px;
 }
 
 .card-skill li:hover {
   background-color: #0a2450;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 
 @keyframes color-change {
-    0% { color: #ff3366; }
-    50% { color: #7a35e9; }
-    100% { color: #ff3366; }
+  0% { color: #ff33e4; }
+  50% { color: #5a50e9; }
+  100% { color: #ff33e4; }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .nombre {
+    font-size: 50px;
+    color: #5a50e9;
+  }
+
+  .contenido {
+    font-size: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  
 }
