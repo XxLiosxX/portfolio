@@ -7,11 +7,29 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
+:root {
+  --color-text: #DDE6ED;
+  --color-card: rgb(65, 65, 65);
+}
+
+.fondo {
   background-color: #040303;
 }
 
 /* ESTILOS MENU */
+
+.navbar {
+  background-color: #131212;
+}
+
+.offcanvas-header {
+  background-color: #131212;
+}
+
+
+.offcanvas-body {
+  background-color: #131212;
+}
 
 nav {
   background-color: #131212;

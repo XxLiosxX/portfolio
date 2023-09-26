@@ -1,33 +1,33 @@
 const express = require('express');
-const app = express();
 const dotenv = require('dotenv');
-const cors = require('cors');
 const path = require('path');
+const routes = require('./router/portfolio')
+const cors = require('cors');
 
 dotenv.config();
 
+// Configuración de la aplicación
 
-// Configuracion de la aplicación
+const app = express();
 
-app.set('title', 'Mi Portafolio');
-app.set('port', process.env.PORT || 3000);
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
+app.set("title", "XxLiosxX | Portafolio");
+app.set("port", process.env.PORT || 3000);
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 
-// middlewares
+// Middlewares
+
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.urlencoded({ extended: true, }));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Rutas
-app.get('/portfolio', (req, res) => {
-    res.render('index');
-});
 
+app.use("/", routes);
 
-// Iniciazion del servidor
+// Inicio del servidor
 
-app.listen(app.get('port'), () => {
-    console.log(`Mi servidor esta corriendo en: localhost:` + app.get('port'));
+app.listen(app.get("port"), () => {
+  console.log(`Mi servidor está corriendo en: localhost:${app.get("port")}`);
 });

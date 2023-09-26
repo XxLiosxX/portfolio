@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+:root {
+    --color-text: #DDE6ED;
+    --color-card: rgb(65, 65, 65);
+}
+
+.sobre {
+    color: var(--color-text);
+}
+
+strong {
+    color: rgb(18, 62, 184);
+}
+
+.about-session {
+}
+
+.about {
+
+}
+
+.image {
+
+}
+
+.image svg {
+    width: 120px;    
+}
+
+.skill {
+    
+}
+
+@media (max-width: 400px) {
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: armenian;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .skill h2 {
+        padding: 20px 0px 30px 0px;
+    }
+
+    .skill ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 15px;
+    }
+
+    .skill svg {
+        width: 50px;
+        opacity: 100%;
+    }
+}
+  
+@media (max-width: 768px) {
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: armenian;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .skill h2 {
+        padding: 20px 0px 30px 0px;
+    }
+
+    .skill ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 15px;
+    }
+
+    .skill svg {
+        width: 50px;
+        opacity: 100%;
+    }
+}

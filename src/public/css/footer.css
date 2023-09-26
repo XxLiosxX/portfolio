@@ -2,28 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-footer {
+  }
+  
+  footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
-}
-
-footer p {
+    padding-top: 40px;
+  }
+  
+  footer p {
     color: var(--color-text);
+  }
+  
+  footer ul, footer li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 
 footer a {
     color: var(--color-text);
-    font-size: 30px;
-    transition: 500ms;
+    padding-left: 10px;
 }
 
-footer a:hover{
-    font-size: 50px;
+
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+  }
 }
 
 @keyframes heart-beat {
