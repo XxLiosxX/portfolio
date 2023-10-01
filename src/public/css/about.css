@@ -18,23 +18,68 @@ strong {
     color: rgb(18, 62, 184);
 }
 
-.about-session {
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: armenian;
 }
-
 .about {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.image {
-
+.about h2 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
-.image svg {
-    width: 120px;    
+.about p {
+    font-size: 20px;
+}
+
+.about li {
+    font-size: 20px;
 }
 
 .skill {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.skill h2 {
+    padding: 20px 0px 30px 0px;
+}
+
+.skill ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    transition: 500ms;
+}
+
+.skill svg {
+    width: 50px;
+    opacity: 100%;
+    transition: 500ms;
+}
+
+.skill svg:hover {
+    width: 80px;
 }
 
 @media (max-width: 400px) {

@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const routes = require('./router/portfolio')
 const cors = require('cors');
+const errorHandler = require('./middleware/errorhandler');
 
 dotenv.config();
 
@@ -21,10 +22,11 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(errorHandler);
 
 // Rutas
 
-app.use("/", routes);
+app.use("/", routes)
 
 // Inicio del servidor
 
