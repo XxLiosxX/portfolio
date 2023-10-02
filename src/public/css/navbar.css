@@ -18,25 +18,11 @@
 
 /* ESTILOS MENU */
 
-.navbar {
-  background-color: #131212;
-}
-
-.offcanvas-header {
-  background-color: #131212;
-}
-
-
-.offcanvas-body {
-  background-color: #131212;
-}
-
+.navbar,
+.offcanvas-header,
+.offcanvas-body,
 nav {
   background-color: #131212;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .menu {
@@ -61,7 +47,6 @@ nav {
 
 .name:hover {
   font-size: 30px;
-  transition: all 0.6s;
 }
 
 .group {
@@ -75,6 +60,4 @@ nav {
 
 .menu a:hover {
   color: #fff8f8;
-  font-weight: bold;
 }
-  
