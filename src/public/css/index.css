@@ -31,7 +31,6 @@ strong {
 
 .intro span {
   font-style: italic;
-  animation: color-change 4s infinite;
 }
 
 .hero {
@@ -142,13 +141,6 @@ strong {
   50% { color: #5a50e9; }
   100% { color: #ff33e4; }
 }*/
-
-@keyframes color-change {
-  0% { font-size: 30px; }
-  50% { font-size: 37px; }
-  100% { font-size: 30px; }
-}
-
 
 /* Small devices (landscape phones, 576px and up)*/
 /*@media (max-width: 576px) {
