@@ -61,3 +61,52 @@ nav {
 .menu a:hover {
   color: #fff8f8;
 }
+
+/* Estilos del pie de página */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+}
+
+footer p {
+  color: var(--color-text);
+}
+
+footer ul,
+footer li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+footer a {
+  color: var(--color-text);
+  padding-left: 10px;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* Keyframes */
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
