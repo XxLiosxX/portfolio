@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);.menu a,.name{transition:.6s}.menu a,footer a,footer p{color:var(--color-text)}*{margin:0;padding:0;box-sizing:border-box;font-family:Lato,sans-serif}:root{--color-text:#DDE6ED;--color-card:rgb(65, 65, 65)}.fondo{background-color:#040303}.navbar,.offcanvas-body,.offcanvas-header,nav{background-color:#131212}.menu{display:flex;flex-direction:row;align-items:center;justify-content:space-around}.group,footer{flex-direction:row;display:flex}.menu a{font-family:Poppins,sans-serif;font-weight:700}.name{font-size:25px;animation:2.5s infinite color-change}.name:hover{font-size:30px}.item{padding-right:20px}.menu a:hover{color:#fff8f8}footer{justify-content:space-around;align-items:center;padding-top:40px}footer li,footer ul{display:flex;flex-direction:row;list-style:none}footer a{padding-left:10px}@media (max-width:768px){footer p{font-size:12px}}@keyframes heart-beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +18,7 @@
   background-color: #040303;
 }
 
-/* ESTILOS MENU */
+/* ESTILOS MENU 
 
 .navbar,
 .offcanvas-header,
@@ -62,7 +64,7 @@ nav {
   color: #fff8f8;
 }
 
-/* Estilos del pie de página */
+/* Estilos del pie de página 
 
 footer {
   display: flex;
@@ -88,7 +90,7 @@ footer a {
   padding-left: 10px;
 }
 
-/* Media queries */
+/* Media queries 
 
 @media (max-width: 768px) {
   footer p {
@@ -96,7 +98,7 @@ footer a {
   }
 }
 
-/* Keyframes */
+/* Keyframes 
 
 @keyframes heart-beat {
   0% {
