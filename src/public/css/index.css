@@ -1,4 +1,5 @@
-/* Estilos globales */
+.home,.intro{display:flex}*{margin:0;padding:0;list-style:none;text-decoration:none;box-sizing:border-box}:root{--color-text:#DDE6ED;--color-card:rgb(65, 65, 65)}.home{flex-direction:column;align-items:center;color:var(--color-text)}.intro{flex-direction:row;align-items:center;font-weight:700}strong{color:#123eb8}.intro span{font-style:italic}.hero{font-size:2.4em}.image svg{width:120px;transform:rotate(-10deg)}@media (max-width:400px){.hero p,.hero span{font-size:30px}}@media (max-width:768px){.hero,.mi h2{font-size:30px}main.container{padding:80px 0 100px}section.intro.my-4.container-fluid{display:flex;flex-direction:column;max-width:100%}.image{padding-top:20px;text-align:center}.mi h2{padding-bottom:20px}}@media (min-width:768px){.intro{display:flex;flex-direction:row;justify-content:space-around;align-items:center}}@media (min-width:992px){.container{padding-bottom:40px}}
+/* Estilos globales 
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@
   --color-card: rgb(65, 65, 65);
 }
 
-/* Estilos de la página de inicio */
+/* Estilos de la página de inicio 
 
 .home {
   display: flex;
@@ -46,7 +47,7 @@ strong {
   transform: rotate(-10deg);
 }
 
-/* Media queries */
+/* Media queries 
 
 @media (max-width: 400px) {
   .hero p, .hero span {
@@ -80,7 +81,7 @@ strong {
   }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .intro {
     display: flex;
@@ -90,12 +91,12 @@ strong {
   }
 }
 
-/* Large devices (desktops, 992px and up)*/
+/* Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .container {
     padding-bottom: 40px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
+/* Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
